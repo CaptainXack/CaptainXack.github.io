@@ -1,11 +1,1 @@
-{
-  "name":"Coupon Hunt HQ",
-  "short_name":"Coupon Hunt",
-  "description":"Live UK deals, coupons and verified stacking",
-  "start_url":"./app.html",
-  "scope":"./",
-  "display":"standalone",
-  "background_color":"#07111f",
-  "theme_color":"#07111f",
-  "icons":[{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
-}
+{"name":"Coupon Hunt HQ","short_name":"Coupon Hunt","description":"UK deals, coupons, shopping list, claims and verified stacking","start_url":"./app.html?v=6","scope":"./","display":"standalone","background_color":"#07111f","theme_color":"#07111f","icons":[{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}],"shortcuts":[{"name":"Deals","url":"./app.html"},{"name":"Coupons","url":"./coupons.html"},{"name":"Claims","url":"./claims.html"},{"name":"Subscriptions","url":"./subs.html"},{"name":"In Store","url":"./instore.html"}]}
