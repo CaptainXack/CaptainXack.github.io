@@ -1,13 +1,11 @@
 {
-  "name": "Coupon Hunt HQ",
-  "short_name": "Coupon Hunt",
-  "description": "Live UK deals, coupons and verified stacking",
-  "start_url": "./live.html",
-  "scope": "./",
-  "display": "standalone",
-  "background_color": "#08111f",
-  "theme_color": "#08111f",
-  "icons": [
-    {"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
-  ]
+  "name":"Coupon Hunt HQ",
+  "short_name":"Coupon Hunt",
+  "description":"Live UK deals, coupons and verified stacking",
+  "start_url":"./app.html",
+  "scope":"./",
+  "display":"standalone",
+  "background_color":"#07111f",
+  "theme_color":"#07111f",
+  "icons":[{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
 }
