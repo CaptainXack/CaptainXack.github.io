@@ -1,0 +1,96 @@
+{
+  "version": 11,
+  "generatedAt": "2026-09-09 08:50 BST",
+  "deals": [
+    {
+      "dealId": "FORTHGLADE-FAV40-SEP26",
+      "status": "🟠 CHECK",
+      "deal": "Forthglade • 40% off selected Most Loved Favourites with FAV40",
+      "save": "40%",
+      "code": "FAV40",
+      "where": "Forthglade direct",
+      "stack": "🚫 NO",
+      "rule": "1 code use per household; selected favourites only; eligibility check because debit-card orders require age 18+",
+      "expires": "Limited time; closing date not stated",
+      "dealLink": "https://forthglade.com/collections/most-loved-favourites",
+      "terms": "https://forthglade.com/pages/terms-conditions"
+    },
+    {
+      "dealId": "FORTHGLADE-NC30GA-SUB40",
+      "status": "🟠 CHECK",
+      "deal": "Forthglade • 30% off first order for new customers with NC30GA; official subscription page advertises extra 10% when subscribing",
+      "save": "30%",
+      "code": "NC30GA",
+      "where": "Forthglade direct",
+      "stack": "❓ CHECK",
+      "rule": "1 code use per household; official page advertises the subscription combination, but closing date and purchaser eligibility remain unresolved",
+      "expires": "No fixed closing date stated on current page",
+      "dealLink": "https://forthglade.com/collections/natural-dog-food-subscribe-save",
+      "terms": "https://forthglade.com/pages/terms-conditions"
+    },
+    {
+      "dealId": "BURNS-SUBSCRIBE20-10",
+      "status": "🟠 CHECK",
+      "deal": "Burns Pet Nutrition • Subscribe & Save: 20% off first subscription order; 10% off subsequent deliveries",
+      "save": "20% first; 10% recurring",
+      "where": "Burns Pet Nutrition direct website",
+      "stack": "❓ CHECK",
+      "rule": "20% first subscription order; 10% later deliveries; account/person/household limit, stacking, eligibility and cancellation cutoff remain unclear",
+      "expires": "No fixed closing date stated; current until changed or withdrawn",
+      "dealLink": "https://burnspet.co.uk/pages/subscribe-save",
+      "terms": "https://burnspet.co.uk/pages/subscribe-save ; https://burnspet.co.uk/pages/delivery-returns"
+    }
+  ],
+  "coupons": [],
+  "claims": [],
+  "subscriptions": [
+    {
+      "brand": "Forthglade",
+      "product": "NC30GA new-customer first subscription + recurring Subscribe & Save",
+      "dealId": "FORTHGLADE-NC30GA-SUB40",
+      "start": "Not started",
+      "trialEnd": "N/A",
+      "nextCharge": "Depends on selected delivery frequency; no subscription started",
+      "renewal": "10% recurring subscription saving on eligible products; exact basket price varies",
+      "delivery": "Free at £10+ after discounts; £1.99 below £10",
+      "cancelBy": "Pause/skip/cancel anytime is advertised; act before the next order processes. Site shows 3-day order notifications; exact post-processing cutoff unclear.",
+      "status": "Offer template - not started / Eligibility check",
+      "cancelled": "No",
+      "confirmation": "Official Forthglade Subscribe & Save page + Terms & Conditions",
+      "notes": "No account, subscription or order created. Purchaser-age eligibility and the exact promotion closing date remain unresolved."
+    },
+    {
+      "brand": "Burns Pet Nutrition",
+      "product": "Subscribe & Save: 20% first subscription order; 10% subsequent deliveries",
+      "dealId": "BURNS-SUBSCRIBE20-10",
+      "start": "Not started",
+      "trialEnd": "No fixed trial period",
+      "nextCharge": "Chosen 2, 4, 5, 6, 8 or 12 week frequency",
+      "renewal": "10% off recurring eligible subscription orders after first order",
+      "delivery": "Varies by order value/location; exact current threshold wording needs confirmation",
+      "cancelBy": "Cancel/change before next order enters processing; exact cutoff not verified",
+      "status": "Offer template - not started / Needs terms",
+      "cancelled": "No",
+      "confirmation": "Official Burns Subscribe & Save page + delivery/returns page",
+      "notes": "No account, subscription or purchase started. Stacking, account/person/household limits, purchaser eligibility and exact cancellation cutoff remain unclear."
+    }
+  ],
+  "instore": [],
+  "dealStatusOverrides": [
+    {
+      "deal": "Thrive Pet Foods • Free Taster Club samples for feedback",
+      "status": "🟠 CHECK"
+    }
+  ],
+  "remove": {
+    "deals": ["Pooch & Mutt • 30% off one-time items with goodwill code"],
+    "coupons": [],
+    "claims": [],
+    "subscriptions": [],
+    "instore": []
+  },
+  "expected": {
+    "dealIds": ["FORTHGLADE-FAV40-SEP26", "FORTHGLADE-NC30GA-SUB40", "BURNS-SUBSCRIBE20-10"],
+    "subscriptionDealIds": ["FORTHGLADE-NC30GA-SUB40", "BURNS-SUBSCRIBE20-10"]
+  }
+}
