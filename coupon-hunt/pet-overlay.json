@@ -1,6 +1,6 @@
 {
-  "version": 11,
-  "generatedAt": "2026-09-09 08:50 BST",
+  "version": 12,
+  "generatedAt": "2026-09-09 09:17 BST",
   "deals": [
     {
       "dealId": "FORTHGLADE-FAV40-SEP26",
@@ -39,6 +39,19 @@
       "expires": "No fixed closing date stated; current until changed or withdrawn",
       "dealLink": "https://burnspet.co.uk/pages/subscribe-save",
       "terms": "https://burnspet.co.uk/pages/subscribe-save ; https://burnspet.co.uk/pages/delivery-returns"
+    },
+    {
+      "dealId": "NATURO-SUB30-SEP26",
+      "status": "🟠 CHECK",
+      "deal": "Naturo Pet Food • 30% off first subscription order, then 10% ongoing",
+      "save": "30% first order; 10% ongoing",
+      "code": "Automatic subscription discount",
+      "where": "Naturo direct",
+      "stack": "🚫 NO",
+      "rule": "First-time subscription customer/household only; max first subscription order spend £250; prior subscription account/address/cardholder/household excluded; purchaser/account age eligibility unresolved",
+      "expires": "No fixed closing date stated",
+      "dealLink": "https://www.naturopetfoods.com/pages/subscribe-save",
+      "terms": "https://www.naturopetfoods.com/pages/terms-and-conditions"
     }
   ],
   "coupons": [],
@@ -73,6 +86,21 @@
       "cancelled": "No",
       "confirmation": "Official Burns Subscribe & Save page + delivery/returns page",
       "notes": "No account, subscription or purchase started. Stacking, account/person/household limits, purchaser eligibility and exact cancellation cutoff remain unclear."
+    },
+    {
+      "brand": "Naturo Pet Food",
+      "product": "Subscribe & Save - 30% first order, 10% ongoing",
+      "dealId": "NATURO-SUB30-SEP26",
+      "start": "Not started",
+      "trialEnd": "No fixed trial period",
+      "nextCharge": "Next scheduled subscription order after first delivery",
+      "renewal": "10% off standard eligible subscription pricing",
+      "delivery": "Delivery depends on basket/threshold",
+      "cancelBy": "Skip, pause or cancel before next order; exact cutoff not published on checked pages",
+      "status": "Eligibility check / Needs terms",
+      "cancelled": "No",
+      "confirmation": "Official Subscribe & Save page + T&C",
+      "notes": "First subscription gets 30% automatically at payment, max order spend £250; subsequent orders get 10%. No stack. No account/subscription started; age/account eligibility and fixed offer end remain unclear."
     }
   ],
   "instore": [],
@@ -90,7 +118,7 @@
     "instore": []
   },
   "expected": {
-    "dealIds": ["FORTHGLADE-FAV40-SEP26", "FORTHGLADE-NC30GA-SUB40", "BURNS-SUBSCRIBE20-10"],
-    "subscriptionDealIds": ["FORTHGLADE-NC30GA-SUB40", "BURNS-SUBSCRIBE20-10"]
+    "dealIds": ["FORTHGLADE-FAV40-SEP26", "FORTHGLADE-NC30GA-SUB40", "BURNS-SUBSCRIBE20-10", "NATURO-SUB30-SEP26"],
+    "subscriptionDealIds": ["FORTHGLADE-NC30GA-SUB40", "BURNS-SUBSCRIBE20-10", "NATURO-SUB30-SEP26"]
   }
 }
