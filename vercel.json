@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/", "destination": "/coupon-hunt-hq/index.html" },
+    { "source": "/manifest.webmanifest", "destination": "/coupon-hunt-hq/manifest.webmanifest" },
+    { "source": "/sw.js", "destination": "/coupon-hunt-hq/sw.js" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    }
+  ]
+}
