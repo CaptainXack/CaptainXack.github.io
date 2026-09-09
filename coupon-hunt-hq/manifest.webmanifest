@@ -1,0 +1,9 @@
+{
+  "name": "Coupon Hunt HQ",
+  "short_name": "Coupon Hunt",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#08111f",
+  "theme_color": "#08111f",
+  "description": "Live UK coupon, cashback and savings assistant"
+}
