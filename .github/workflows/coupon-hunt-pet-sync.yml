@@ -1,0 +1,62 @@
+name: Coupon Hunt Pet Feed Sync
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'coupon-hunt/pet-overlay.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coupon-hunt-public-feed
+  cancel-in-progress: false
+
+jobs:
+  merge-pet-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Merge, validate and publish with conflict recovery
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          for attempt in 1 2 3; do
+            echo "Coupon Hunt merge attempt ${attempt}/3"
+            git fetch origin main
+            git reset --hard origin/main
+            python coupon-hunt/merge_pet_overlay.py
+            git add coupon-hunt/data.json coupon-hunt/data-last-good.json
+
+            if git diff --cached --quiet; then
+              echo 'Public feed already matches validated overlay.'
+              exit 0
+            fi
+
+            git commit -m 'Sync Coupon Hunt pet feed'
+            if git push origin HEAD:main; then
+              echo 'Coupon Hunt pet feed published.'
+              exit 0
+            fi
+
+            echo 'Concurrent update detected; rebuilding from newest main.'
+            sleep $((attempt * 2))
+          done
+
+          echo 'Unable to publish after three validated merge attempts.' >&2
+          exit 1
