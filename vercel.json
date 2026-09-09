@@ -1,10 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [
-    { "source": "/", "destination": "/coupon-hunt-hq/index.html" },
-    { "source": "/manifest.webmanifest", "destination": "/coupon-hunt-hq/manifest.webmanifest" },
-    { "source": "/sw.js", "destination": "/coupon-hunt-hq/sw.js" }
-  ],
+  "buildCommand": "rm -rf dist && mkdir dist && cp coupon-hunt-hq/index.html dist/index.html && cp coupon-hunt-hq/manifest.webmanifest dist/manifest.webmanifest && cp coupon-hunt-hq/sw.js dist/sw.js",
+  "outputDirectory": "dist",
   "headers": [
     {
       "source": "/(.*)",
